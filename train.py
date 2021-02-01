@@ -17,7 +17,7 @@ def get_parser():
     parser.add_argument('--bert_dropout', default=0.3, help='dropout rate', type=float)
     parser.add_argument('--dropout', default=0.5, help='dropout rate', type=float)
     parser.add_argument('--dec_dropout', default=0.2, help='dropout rate', type=float)
-    parser.add_argument('--drnn', default=600, help='decoder rnn size', type=int)
+    parser.add_argument('--drnn', default=300, help='decoder rnn size', type=int)
     parser.add_argument('--demb', default=400, help='decoder emb size', type=int)
     parser.add_argument('--num_layers', default=2, help='decoder layers', type=int)
     parser.add_argument('--beam_size', default=0, help='beam search size', type=int)

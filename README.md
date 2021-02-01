@@ -120,6 +120,14 @@ For more options, see `python train.py --help`.
 When training and generating (with `generate.py`), you should set the correct `--dataset`.
 
 
+These numbers are slightly different from those in the paper due to different versions of PyTorch etc (this release should work with the latest at the time of release, which is 1.7).
+Alternatively, I have also included checkpoints used in my submission.
+You can [download these here](https://drive.google.com/file/d/1aA7z27UySNFTlWxuX6rWlBTKBtHps6RR/view?usp=sharing) (it is rather large, at 6.9 GB zipped).
+You should unzip this in the root folder and then adapt (eg. synthesize data and retrain using these checkpoints instead of `r1`) using these pairs of models.
+To sanity check the download, you should be able to run `python train.py --test_only --dataset spider --drnn 300 --keep_values --model nl2sql --resume best/spider_nl2sql.tar` and see an `official_em` of 54.83.
+Remeber, should you want to apply GAZP to your model on the official evaluation, **you need to do adaptation on the test DBs!**
+
+
 If you have questions, please make a Github issue.
 For comments about the paper, please email me at [victor@victorzhong.com](mailto:victor@victorzhong.com).
 
