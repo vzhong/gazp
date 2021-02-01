@@ -1,0 +1,14 @@
+data/
+exp/
+cache/
+jobs/
+database/
+*.py[cod]
+*.jsonl
+*.out
+*.json
+*.txt
+sparc/
+*.zip
+old_exp/
+*.pt
